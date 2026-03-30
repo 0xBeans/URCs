@@ -1,0 +1,25 @@
+name: Validate UIPs
+
+on:
+  pull_request:
+    paths:
+      - 'UIPs/*.md'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Get changed UIP files
+        id: changed
+        run: |
+          FILES=$(gh pr diff ${{ github.event.pull_request.number }} --name-only | grep '^UIPs/.*\.md$' || true)
+          echo "files=$FILES" >> "$GITHUB_OUTPUT"
+        env:
+          GH_TOKEN: ${{ github.token }}
+
+      - name: Validate UIPs
+        if: steps.changed.outputs.files != ''
+        run: |
+          python3 scripts/validate_uip.py ${{ steps.changed.outputs.files }}
