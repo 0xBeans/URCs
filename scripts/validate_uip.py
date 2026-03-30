@@ -43,7 +43,7 @@ def validate_preamble(preamble):
 def validate_sections(content):
     """Check that all required section headings exist. Returns list of error strings."""
     errors = []
-    headings = re.findall(r"^##\s+(.+)$", content, re.MULTILINE)
+    headings = [h.strip() for h in re.findall(r"^##\s+(.+)$", content, re.MULTILINE)]
     for section in REQUIRED_SECTIONS:
         if section not in headings:
             errors.append(f"Missing required section: {section}")
@@ -68,8 +68,11 @@ def validate_filename(filepath, preamble):
 
 def validate_file(filepath):
     """Run all validations on a single UIP file. Returns list of error strings."""
-    with open(filepath, "r") as f:
-        content = f.read()
+    try:
+        with open(filepath, "r") as f:
+            content = f.read()
+    except OSError as e:
+        return [f"Could not read file: {e}"]
     preamble = parse_preamble(content)
     errors = []
     errors.extend(validate_preamble(preamble))
