@@ -1,50 +1,42 @@
 ---
-uip: <to be assigned>
-title: <UIP title>
-author: <author name (@github)>
+uip: <number — assigned by author, confirmed by editor>
+title: <short descriptive title — do not include the UIP number>
 status: Draft
-created: <date created, in YYYY-MM-DD format>
+author: <name(s) and contact — GitHub handle, email, or ENS>
+created: <YYYY-MM-DD>
 ---
 
 ## Abstract
 
-A short technical summary of the proposal.
+*A short technical summary of this proposal. Write 2–4 sentences. A reader should be able to understand the general intent and scope of the proposal from this section alone without reading the full document.*
 
 ## Motivation
 
-Why this proposal is necessary. What problem does it address? Why are existing approaches insufficient?
-
-*This section is optional if the motivation is self-evident.*
+*Explain why this proposal is necessary. Describe the problem being addressed and why existing processes, conventions, or designs are insufficient. This section may be omitted if the motivation is self-evident from the proposal.*
 
 ## Specification
 
-The detailed description of the proposal.
+*Describe the proposal in sufficient detail to allow it to be clearly understood and evaluated. For all UIPs, the specification defines either the proposed process, rules, or conventions, including their scope and intended effect or the technical specification, including interfaces, expected behavior, constraints, and invariants. The specification should focus on what is required, not how it is implemented.*
 
 ## Rationale
 
-The reasoning behind the design. Describe alternative approaches considered, tradeoffs made, and concerns raised during discussion.
+*Explain the reasoning behind the design choices in this proposal. Describe alternative approaches that were considered and tradeoffs that were made. Note any concerns raised during discussion and how they were addressed. The rationale serves as a record of design decisions and their justification.*
 
 ## Backwards Compatibility
 
-Description of any backwards-incompatible changes and their consequences.
-
-*This section is optional if no incompatibilities exist.*
+*If this proposal introduces backwards-incompatible changes, describe those incompatibilities and their consequences. This may include changes to existing processes or conventions, or incompatibilities with existing contracts or interfaces. This section may be omitted if no such incompatibilities exist.*
 
 ## Test Cases
 
-Test cases that aid understanding of the proposal.
-
-*This section is optional.*
+*Include test cases where they meaningfully aid understanding of the proposal. This section is primarily relevant for UIPs that define complex or sensitive behavior. This section is optional.*
 
 ## Reference Implementation
 
-An example implementation to assist readers in understanding the proposal.
-
-*This section is optional.*
+*A reference or example implementation may be included to assist readers in understanding the proposal. This may include example documents, templates, workflows, or smart-contract code. Inclusion of a reference implementation does not imply endorsement or required adoption. This section is optional.*
 
 ## Security Considerations
 
-Discussion of security considerations relevant to this proposal.
+*All UIPs must include this section. Address risks related to process misuse, ambiguity, or unintended effects or security assumptions, risks, and design decisions related to smart-contract behavior.*
 
 ## Copyright
 
