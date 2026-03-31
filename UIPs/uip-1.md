@@ -58,7 +58,7 @@ Numbers are never reused. Withdrawn UIPs retain their number in the repository w
 
 #### Step 1 — Draft
 
-The author prepares a UIP using the template in `/docs/template.md`. The draft should be complete enough to communicate the proposal clearly, but does not need to be final.
+The author prepares a UIP using the template in `/uip-template.md`. The draft should be complete enough to communicate the proposal clearly, but does not need to be final.
 
 The author opens a pull request to the UIP GitHub repository. The PR should include the draft document filed under `/UIPs/` with the next available number. The status in the preamble should be set to `Draft`.
 
@@ -105,7 +105,7 @@ Editors are responsible for:
 
 Each UIP is a design document with a standardized structure intended to make proposals easy to read, discuss, and reference over time.
 
-The full proposal format — including required and optional sections — is defined in `/docs/template.md`. Every UIP must include a preamble, abstract, specification, rationale, security considerations, and copyright section. A summary of each section is also included below.
+The full proposal format — including required and optional sections — is defined in `/uip-template.md`. Every UIP must include a preamble, abstract, specification, rationale, security considerations, and copyright section. A summary of each section is also included below.
 
 #### Preamble
 
