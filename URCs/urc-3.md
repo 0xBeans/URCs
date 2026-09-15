@@ -2,7 +2,7 @@
 urc: 3
 title: Hook TVL and Effective Liquidity Reporting
 author: Matteen Mobasheran (@matteenm), Mark Toda (@MarkToda), Daniel Gretzke (@gretzke), Alice Henshaw (@hensha256)
-status: Discussion
+status: Final
 created: 2026-06-11
 discussions-to: https://gov.uniswap.org/t/urc-3-hook-tvl-and-effective-liquidity-reporting/26155/1
 ---
